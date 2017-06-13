@@ -1,3 +1,16 @@
+Platform Customized Resize
+======
+
+Since some JPEG file paste processing panics, we merged the original [pull request](https://github.com/nfnt/resize/pull/51).
+
+The original project has not been updated since 2017-07-25.
+* Final commit of original master branch ... 2016-07-25
+* Final commit of the merged pull request ... 2016-09-08
+
+
+
+
+
 Resize
 ======
 
@@ -91,7 +104,7 @@ Caveats
 -------
 
 * Optimized access routines are used for `image.RGBA`, `image.NRGBA`, `image.RGBA64`, `image.NRGBA64`, `image.YCbCr`, `image.Gray`, and `image.Gray16` types. All other image types are accessed in a generic way that will result in slow processing speed.
-* JPEG images are stored in `image.YCbCr`. This image format stores data in a way that will decrease processing speed. A resize may be up to 2 times slower than with `image.RGBA`. 
+* JPEG images are stored in `image.YCbCr`. This image format stores data in a way that will decrease processing speed. A resize may be up to 2 times slower than with `image.RGBA`.
 
 
 Downsizing Samples
